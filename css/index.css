@@ -1,0 +1,165 @@
+*{margin: 0;padding: 0; outline:0}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 20vh;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+nav img{
+    height: 50px;
+    width: 20%;
+}
+.nav-items{
+    font-family: "Poppins";
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    cursor: pointer;
+}
+.nav-item.active-item , .nav-item:hover{
+    font-weight: 800;
+    color:#FE5E35;
+}
+
+.intro-section{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+} 
+.left-section{
+    flex:0.6;
+    display: flex;
+    flex-direction:column;
+    font-family: "Poppins";
+}
+.right-section{
+    flex:0.4;
+    position: relative;
+    font-family: "Fredoka One";
+    display: flex;
+    flex-direction: column;
+}
+.headphone-div{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    bottom: 2.5rem;
+    left: -1rem;
+    width: 20%;
+    background-color: transparent;
+    filter: drop-shadow(3px 5px 0px #00000080);
+}
+.discount-content
+{
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 4rem;
+    left:0.3rem;
+    z-index: 2;
+    color: #fff;
+    font-weight: 200;
+}
+.discount-content h1{
+    font-weight: 900;
+}
+.headphone-div img:last-of-type{
+    width: 80%;
+    margin: 0 auto;
+}
+.dots{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin:0 20px} 
+.yellow-dot{background-color: yellow;}
+.tomato-dot{background-color: tomato;}
+.black-dot{background-color: black;}
+.right-section .action-btn{
+    padding: 10px 10px;
+    margin: 2rem auto;
+    color: #fff;
+    background-color: #FE5E35;
+    border: none;
+    border-radius: 20px;
+}
+.left-section  h3 img{
+    width: 30px;
+}
+.left-section h1{
+    font-family: "Fredoka One";
+    font-weight: 500;
+    font-size: 4rem;
+}
+.text{
+    color: silver;
+    font-size: 0.8rem;
+    padding: 0 30px;
+}
+.action-btn{
+    margin-right: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FE5E35;
+    color: #fff;
+    margin-top: 3%;
+    cursor: pointer;
+}
+.action-btn:hover{
+    color: #FE5E35;
+    border: 1px solid #FE5E35;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px #FE5E35;
+}
+
+.sub-headlines{
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+.sub-headline img{
+    width: 20px;
+}
+.sub-headline{
+    z-index: 2;
+}
+
+@media screen and (max-width:900px) {
+    .intro-section{
+    flex-direction: column;
+    }
+    .left-section{
+        margin-bottom: 8%;
+    }
+    .right-section{
+        justify-content: center;
+        align-items: center;
+    }
+    .headphone-div{
+        margin-left: 5%;
+    }
+    .headphone-div img:last-child{
+        width: 90%;
+        height: 100%;
+    }
+    .action-btns{
+        margin: 0 auto;
+    }
+}
